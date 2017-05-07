@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content=
+"width=device-width,initial-scale=1.0">
+
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--导航栏-->
+<div class="head-top">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="container-fluid">
+        	<!--1.导航头部-->
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                	<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                </button>
+            	<a class="navbar-brand" href="#" id="nav-brand-itheima">
+                	<img alt="网站logo" src="images/logo.png"/>
+                </a>
+            </div>
+            <!--2.导航列表-->
+            <div class="navbar-collapse" id="navbar-collapse">
+            	<ul class="nav navbar-nav">
+                    <!--1.首页-->
+                    <li><a href="#">首页</a></li>
+                    <!--2.手机导航-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">手机
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"> <a href="#">苹果手机</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">苹果7</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"> <a href="#">小米手机</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">小米5S Plus</a></li>
+                                    <li><a href="#">小米mix</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"> <a href="#">魅族手机</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">魅族Pro6</a></li>
+                                    <li><a href="#">魅族Pro6</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--3.平板电脑导航栏-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">平板电脑
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">苹果</a></li>
+                            <li><a href="#">小米</a></li>
+                            <li><a href="#">魅族</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">三星</a></li>
+                        </ul>
+                    </li>
+                    <!--4.VR产品导航栏-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VR科技
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">苹果</a></li>
+                            <li><a href="#">小米</a></li>
+                            <li><a href="#">魅族</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">三星</a></li>
+                        </ul>
+                    </li>
+                    <!--5.周边产品导航栏-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">周边产品
+                        <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">苹果</a></li>
+                            <li><a href="#">小米</a></li>
+                            <li><a href="#">魅族</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">三星</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                	<form class="navbar-form navbar-right" role="search">
+                    	<ul class="nav navbar-nav navbar-right">
+                        	<!--注册-->
+                        	<li>
+                            	<a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                	注册
+                                </a>
+                            </li>
+                            <!--登陆-->
+                            <li>
+                            	<a href="#">
+                                <span class="glyphicon glyphicon-log-in"></span>
+                                	登陆
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--广告栏-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!--1.小点-->
+    <ol class="carousel-indicators">
+    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!--2.主体内容项目-->
+    <div class="carousel-inner" role="listbox">
+    	<!--项目一：魅族-->
+        <div class="item active">
+        	<img src="images/魅族pro6.jpg" alt="第一"/>
+            <div class="carousel-caption">
+            	<h1>魅族</h1>
+                <p></p>
+                <p><a class="btn btn-primary" href="#" role="button">点击详情</a></p>
+            </div>
+        </div>
+    	<!--项目二：苹果-->
+        <div class="item">
+            <img src="images/苹果7.jpg" alt="第二"/>
+                <div class="carousel-caption">
+                    <h1>苹果</h1>
+                    <p></p>
+                    <p><a class="btn btn-primary" href="#" role="button">点击详情</a></p>
+                </div>
+        </div>
+        <!--项目三：小米-->
+        <div class="item">
+            <img src="images/小米5s.jpg" alt="第三"/>
+                <div class="carousel-caption">
+                    <h1>小米</h1>
+                    <p></p>
+                    <p><a class="btn btn-primary" href="#" role="button">点击详情</a></p>
+                </div>
+        </div>
+    </div>
+    <!--左右超链接-->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev" role="button">
+    	<span class="glyphicon glyphicon-chevron-left">
+        </span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next" role="button">
+    	<span class="glyphicon glyphicon-chevron-right">
+        </span>
+    </a>
+</div>
+<!--系统厂商介绍-->
+<div class="Tab-summary">
+        <div class="container">
+            <!--1.定义标签-->
+            <ul class="nav nav-tabs" role="tablist" id="tab-list">
+                <li class="active"><a href="#tab-food" role="tab" data-toggle="tab">Apple</a></li>
+                <li><a href="#tab-noodle" role="tab" data-toggle="tab">Android</a></li>
+                <li><a href="#tab-drink" role="tab" data-toggle="tab">Winphone</a></li>
+            </ul>
+            <!--2.标签内容-->
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-food">
+                    <div class="row feature">
+                        <div class="col-xs-10 col-sm-10">
+                            <h2 class="feature-heading">苹果手机</h2>
+                            <p class="lead">Phone，是美国苹果公司研发的智能手机，它搭载iOS操作系统。第一代iPhone于2007年1月9日由苹果公司前首席执行官史蒂夫·乔布斯发布，并在2007年6月29日正式发售。</p>
+                        </div>
+                        <div class="col-xs-2 col-sm-2">
+                            <img class="img-responsive" src="images/logo/apple.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-noodle">
+                    <div class="row feature">
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="images/logo/android.jpg">
+                        </div>
+                        <div class="col-sm-10">
+                            <h2 class="feature-heading">安卓手机</h2>
+                            <p class="lead">Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-drink">
+                    <div class="row feature">
+                        <div class="col-sm-10">
+                            <h2 class="feature-heading">winphone</h2>
+                            <p class="lead">Windows Phone(简称为WP)是微软于2010年10月21日正式发布的一款手机操作系统，初始版本命名为Windows Phone 7.0[1]  。基于Windows CE内核，采用了一种称为Metro的用户界面(UI)，并将微软旗下的Xbox Live游戏、Xbox Music音乐与独特的视频体验集成至手机中。</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="img-responsive" src="images/logo/winphone.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--商品单品推荐-->
+<div class="choose">
+    <div class="container">
+        <!--第一行，标题以标签按钮-->
+        <div class="row">
+            <div class="rol-md-12">
+                <!--1.模块标题图片-->
+                <div class="navbar-header hidden-xs">
+                    <a class="navbar-brand" href="#">
+                        <!--<img id="title-img" src="#"/>-->
+                        <h2>欢迎来到单品推荐</h2>
+                    </a>
+                </div>
+                <!--2.标签按钮-->
+                <ul class="nav nav-pills navbar-right" role="tablist">
+                    <li>
+                    	<a role="tab" data-toggle="tab" href="#firstpage">
+					    	<span class="glyphicon glyphicon-chevron-left">
+					        </span>
+					    </a>
+					</li>
+                    <li>
+                    	<a  role="tab" data-toggle="tab"  href="#secondpage">
+					    	<span class="glyphicon glyphicon-chevron-right"></span>
+					   	</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+        <!--第二行,图片展示列表-->
+        <div class="row">
+            <div class="tab-content">
+                <!--1.菜品-->
+                <div role="tabpanel" class="tab-pane active" id="firstpage">
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                    <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                        <img src="images/products/sj_1.png"/>
+                        <p>手机</p>
+                        <p>120.00</p>
+                    </div>
+                </div>
+                <!--2.主食-->
+                <div role="tabpanel" class="tab-pane" id="secondpage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery/jquery-1.11.0.min.js">
+</script>
+<script src="lib/bootstrap/js/bootstrap.min.js">
+</script>
+</body>
+</html>

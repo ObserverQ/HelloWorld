@@ -1,0 +1,109 @@
+﻿@model Person
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" ;charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/scss/bootstrap.scss" />
+
+    <!--如果版本是IE9以下的话-->
+    @*<script src="lib/html5shiv/html5shiv.js">
+    </script>
+    <script src="lib/respond/respond.min.js">
+    </script>*@
+    <!--结束-->
+    <link rel="stylesheet" type="text/css" href="~/lib/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/css/cycode.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/css/base.css" />
+    <meta name="keywords" content="手机，登陆，北理工" />
+
+    <title>登录</title>
+
+    <!-- Favicon and touch icons -->
+    @*<link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">*@
+
+</head>
+
+<body>
+    <div class="container box">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="~/lib/images/LOGO.png" />
+            </div>
+            <div class="col-sm-8"></div>
+        </div>
+    </div>
+
+
+
+    <!--登陆框-->
+    <div class="banner-box">
+        <form id="mainForm" class="main-form" enctype="application/x-www-form-urlencoded">
+            <div class="tab-title">
+                <h2>欢迎登录</h2>
+                <!--a class="linkABlue" id="toAccountLogin" href="javascript:void(0);">账号登录</a>
+                <span class="register-line"></span>
+                <a class="linkAGray" id="toVCodeLogin" href="javascript:void(0);">验证码登录</a-->
+            </div>
+
+            <div class="tip-box visiblility-hidden">
+                <i class="err-ico"></i>
+                <span class="tip-font"></span>
+                <span class="close-ico"></span>
+            </div>
+            <div class='normalInput cycode-box fieldInput' id="cycode-box" style="margin-bottom: 20px;">
+                <div class="cycode-selectbox">
+                    <!--span class="cycode-selected">
+
+                        <i class="arrow-down"></i>
+                    </span-->
+                    <input asp-for="Name" class="ipt-account inp-focus" name="account" id="account" maxlength="20" placeholder="用户名" autocomplete="off">
+                </div>
+                <!--div id="cycode-container" class="cycode-container"></div-->
+            </div>
+            <div class="normalInput" id="cycode-box" style="margin-bottom: 20px;">
+                <div class="cycode-selectbox">
+                    <input asp-for="Password" type="password" class="inp-focus" name="password" id="password" maxlength='16' placeholder='请输入密码' autocomplete="off">
+                </div>
+            </div>
+
+            <p id="j_abnormalTips" class="abnormal-tips"></p>
+
+
+
+            <div class='normalInput fieldInput' style='display:none;'>
+                <input id="tips-show" />
+            </div>
+
+
+
+            <div class='rememberField'>
+                <span><input name="remember" id="remember" type="checkbox" value="1" /></span>
+                <label for="remember" tabindex="0">记住登录状态</label>
+
+            </div>
+            <button type="submit" class="btn btn-primary">提交输入</button>
+            @*<a id="login" class='fullBtnBlue btn btn-primary'>登录</a>*@
+            <div class='transferField'>
+                <a class="go2forgetpwd linkABlue rememberFieldForA">忘记密码?</a>
+                <a class="go2register linkABlue" class="linkAGray" id="toRegister">注册</a>
+            </div>
+            <!--a href="javascript:void(0)" id="qr-btn" class="qr-btn"></a-->
+
+        </form>
+    </div>
+    </div>
+
+    <!--新用户登陆-->
+    <!--脚注-->
+    </div>
+    </div>
+
+    <script src="lib/jquery/jquery-1.11.0.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
